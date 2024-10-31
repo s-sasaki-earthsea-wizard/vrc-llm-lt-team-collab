@@ -26,6 +26,39 @@
 /* } */
 
 .title {
+    font-size: 5rem;
+    color: #FF1493;
+    display: block;
+}
+
+.title::before {
+    display: none;
+}
+
+.subtitle {
+    font-size: 4rem;
+    color: #666;
+    display: block;
+    margin-top: 20px;
+}
+
+.title-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-image {
+    margin-top: 2rem;
+    max-width: 75%;  /* 画面幅に応じて調整 */
+}
+
+.title-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;  /* 画像の角を少し丸く */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* 軽い影をつける */
 }
 
 /* https://hiroppy.github.io/fusuma/docs/guides/slide-syntax#declaring-section-title */
@@ -74,7 +107,7 @@
   }
   
   .bot-message {
-    background-color: #f0f2f5;
+    background-color: #bfc0c1;
     color: #1c1e21;
     margin-right: auto;
     text-align: left;

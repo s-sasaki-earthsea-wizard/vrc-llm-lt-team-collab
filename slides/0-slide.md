@@ -1,10 +1,13 @@
 <!-- classes: title -->
 
-# Hello😃
-
-<!-- block-start: grid -->
-<!-- account: twitter, your-account-name -->
-<!-- block-end -->
+<div class="title-slide">
+  <span class="title">いいプロンプトの極意は"チーム開発スキル"にアリ！</span>
+  <span class="subtitle">〜LLMとの対話で広がる個人開発の可能性〜</span>
+  
+  <div class="title-image">
+    <img src="/assets/images/title-image.png" alt="AI assistants and developer in garage" />
+  </div>
+</div>
 
 ---
 
@@ -47,6 +50,11 @@
     </div>
   </div>
 </div>
+
+---
+# TBA
+
+
 
 ---
 
