@@ -1,55 +1,25 @@
-# プロジェクト名
-プロジェクト名を書いてください。
+# vrc-llm-lt-team-collab
 
 ## 概要
-プロジェクトの概要を書いてください。
+2024年11月7日、VRChatの技術系イベント「個人開発集会」のLTセッションでの発表スライドです
 
-## 開発環境
-開発環境について書きます。以下が例です。
+## 開発環境の構築
+[Fusuma](https://github.com/hiroppy/fusuma) によってスライドの作成をしています。
+インストール方法などはFusuma公式ドキュメントを参照してください
 
-- OS: Ubuntu-18.04 (AWS EC2 instance xrdp01-gui)
-- Python: 3.8.6
-
-## インストール方法
-インストール方法を書いてください。
-以下のようなコマンドを書くなどすると手順がわかりやすくなるでしょう。
-
-```
-make install
-```
 
 ## 使い方
-実行方法やチュートリアルを書いてください。
-必要に応じてスクリーンショットや動画を使ってください。
-
-## その他
-必要なことがあれば書いてください。
-
-_____
-
-# Project name
-Write the name of the project.
-
-## Overview
-Write an overview of the project.
-
-## Development environment
-Write about the development environment. The following is an example.
-
-- OS: Ubuntu-18.04 (AWS EC2 instance xrdp01-gui)
-- Python: 3.8.6
-
-## Installation
-Write down the installation procedure.
-Commands will be useful to make clear as:
-
+以下はFusumaの公式ドキュメントのコマンド例をそのまま転載したものです
 ```
-make install
+# --- executable tasks---
+$ npx fusuma init          # create scaffold
+$ npx fusuma start         # run server for development
+$ npx fusuma start-prod    # run server for bundle directory
+$ npx fusuma build         # build slides for production
+$ npx fusuma deploy        # deploy to github pages
+$ npx fusuma pdf           # export as PDF
 ```
 
-## Usage
-Write a running procedure or tutorial.
-Use screenshots and videos if necessary.
+## 免責事項
+- 本スライドの内容に従ったいかなる結果において著者は一切の責任を負いません
 
-## Others
-Anything else, please write here.
