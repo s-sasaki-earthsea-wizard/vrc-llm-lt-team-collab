@@ -1,7 +1,7 @@
 /* themes */
 /* When nothing is loaded, the default theme will be applied. */
 /* see https://github.com/hiroppy/fusuma#themes */
-/* @import '@fusuma/client/assets/style/themes/pop.css'; */
+@import '@fusuma/client/assets/style/themes/pop.css'; 
 /* @import '@fusuma/client/assets/style/themes/babel.css'; */
 /* @import '@fusuma/client/assets/style/themes/webpack.css'; */
 /* @import '@fusuma/client/assets/style/themes/node.css'; */
@@ -31,3 +31,97 @@
 /* https://hiroppy.github.io/fusuma/docs/guides/slide-syntax#declaring-section-title */
 .section-title {
 }
+
+.split {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+  
+  .left {
+    width: 48%;
+    padding: 20px;
+  }
+
+  .right {
+    width: 48%;
+    text-align: left;
+  }
+  
+  .chat-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .bot-message,
+  .user-message {
+    margin-bottom: 15px;
+    padding: 12px 16px;
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+  
+  .bot-thinking {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 10px;
+    padding-left: 16px;
+    font-size: 0.6em;
+  }
+  
+  .bot-message {
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    margin-right: auto;
+    text-align: left;
+  }
+  
+  .user-message {
+    background-color: #0084ff;
+    color: white;
+    margin-left: auto;
+    text-align: left;
+  }
+
+  .highlight {
+    font-weight: bold;
+    color: #0084ff;
+  }
+
+  .code-block {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', 'Source Code Pro', 'Fira Code', 'Consolas', 'Monaco', monospace;  /* モダンなコーディングフォントを追加 */
+    font-size: 0.7em;      /* ちょっと小さめに */
+    line-height: 1.5;      /* 行間を調整 */
+    margin: 10px 0;
+    white-space: pre;
+    text-align: left;
+    letter-spacing: 0.5px; /* 文字間隔を少し広げる */
+    border: 1px solid #3d3d3d; /* 微妙なボーダー */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* 軽い影をつける */
+    padding: 20px;
+    background-color: #1e1e1e;
+  }
+  
+  /* オプション：ホバー時のエフェクト */
+  .code-block:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease;
+  }
+
+  /* コード内の特定の要素用のスタイル */
+  .code-block .brace {
+    color: #f8f8f2;       /* 中括弧の色 */
+  }
+
+  /* インデント用のクラス */
+.indent-1 {
+    padding-left: 4ch;    /* 4文字分のインデント */
+  }
