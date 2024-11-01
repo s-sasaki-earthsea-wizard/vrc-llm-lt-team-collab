@@ -10,6 +10,30 @@
 </div>
 
 ---
+## 自己紹介
+
+<div class="split">
+  <div class="left">
+   <div class="profile-card">
+     <ul>
+       <li>さめ(meg-ssk)</li>
+       <li>フリーランスのソフトウェアエンジニア</li>
+       <li>得意分野:</li>
+         <ul>
+           <li>コンピュータビジョン (画像認識/点群処理)</li>
+           <li>空間情報処理 (GIS/測量データ解析)</li>
+           <li>クラウドインフラ設計/IaC</li>
+         </ul>
+       <li>GitHub: <a href="https://github.com/s-sasaki-earthsea-wizard">s-sasaki-earthsea-wizard</a></li>
+    </ul>
+    </div>
+  </div>
+  <div class="right">
+    <img src="/assets/images/avatar.png" alt="Syota's VRChat avatar" class="avatar-circular"/> <br />
+  </div>
+</div>
+
+---
 
 ## ハイライト
 
@@ -22,9 +46,9 @@
 
 ---
 
-## 詳しい人のために
+## 技術的本質
 
-今日のLTは以下の技術を個人が泥臭く実践していると思ってください
+今日のLTで話す内容は以下の技術を個人が泥臭く実践していると思ってください
 
 - プロンプトエンジニアリング
 - LLMオーケストレーション
@@ -115,8 +139,8 @@
     <ul>
       <li>同じコードを何度も繰り返すより、関数にすれば再利用しやすくて便利だと思います。</li>
       <li>ループ処理にするとデータの個数が増えたときにも修正が簡単になるメリットがあると思います</li>
+      <li>例えば以下のようにするのはどうでしょうか？もし、このような処理が使えないような理由がありましたら、遠慮せずに指摘してください</li>
     </ul>
-    例えば以下のようにするのはどうでしょうか？もし、このような処理が使えないような理由がありましたら、遠慮せずに指摘してください
     <pre class="code-block">
         def process_data(data): <br />
             <span class="indent-1"># Do something with data </span> <br />
@@ -133,41 +157,116 @@
 
 ## なぜチーム開発でリスペクトが重要なのか？
 
-- チームメンバーの実力を引き出し、より良い成果物を作るため
-
-さっきのコードレビューを例にすると
-- あんなコードレビューをされたらPRをする気がなくなる
-  - 悪循環……
+<div class="split">
+  <div class="left">
+    <p class="section-subtitle">コードレビューの心理的影響</p>
+    <ul class="content-list">
+      <li>良くないレビュースタイル
+        <ul>
+          <li>一方的な指摘</li>
+          <li>感情的な表現</li>
+          <li>理由の説明がない</li>
+        </ul>
+      </li>
+      <li>引き起こす問題
+        <ul>
+          <li>モチベーションの低下</li>
+          <li>コミュニケーションの減少</li>
+          <li>チーム全体の生産性低下</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="right">
+    <div class="chat-container">
+      <div class="user-message">
+        コードレビューお願いします🙏
+      </div>
+      <div class="bot-message negative-review">
+        これは冗長すぎます。基礎的なモジュール化・カプセル化の規約を確認して、
+        もう一度全部書き直してください。
+      </div>
+      <div class="user-message">
+        (もう二度とPR出したくない......)
+      </div>
+    </div>
+    <div class="highlight-box warning">
+      こんなレビューを受けたら、
+      誰だってコードを書く意欲が失せてしまう...
+    </div>
+  </div>
+</div>
 
 ---
 
 ## いいプロンプトと悪いプロンプト
 
-### 悪いプロンプト
-
-コードが冗長です。関数にしてループ処理を使ってください
-
-### いいプロンプト
-<div>
-  <ul>
-    <li>提案されたコードでは、同じ処理が繰り返されています。関数を使うと再利用性が高まると思うので、例えば`process_data`という関数を作って、その中にデータ処理を移動させるのはどうでしょう？</li>
-    <li>ループ処理を使うことで、データの数が増えた際に簡単に拡張できると思います。そのため、`process_data`関数をループの中で使用してください</li>
-    <li>わたしの提案は妥当でしょうか？他に改善案あったら教えてください</li>
-  </ul>
+<div class="split">
+  <div class="left">
+    <p class="section-subtitle">プロンプトの書き方の比較</p>
+    <ul class="content-list">
+      <li>良くないプロンプト
+        <ul>
+          <li>一方的な指示</li>
+          <li>理由の説明がない</li>
+          <li>改善の余地を認めない</li>
+        </ul>
+      </li>
+      <li>良いプロンプト
+        <ul>
+          <li>具体的な理由の提示</li>
+          <li>改善案の例示</li>
+          <li>対話の余地を残す</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="right">
+    <div class="chat-container">
+      <h5>悪いプロンプト:</h5>
+      <div class="user-message negative-example">
+        コードが冗長です。関数にしてループ処理を使ってください。
+      </div>
+      <h5>いいプロンプト</h5>
+      <div class="user-message">
+        <ul>
+          <li>同じ処理が繰り返されているので、`process_data`関数にまとめてはどうでしょうか？再利用性が高まると思います</li>
+          <li>データ数の増加に備えて、ループ処理の導入も検討してみましょう</li>
+          <li>この提案は妥当でしょうか？他に改善案があれば教えてください</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 
 ---
 
 ## リスペクトがチーム開発/プロンプト設計に与える影響
 
-- 作業の意義や目的、提案の明確な意図を伝える
-	-  チームメンバーは互いに異なる専門性を持っている
-	- **リスペクトし合うことお互いの専門性を引き出し、いい仕事を生む**
-- 自分の提案に反論や追加の意見を言いやすくするための心配り
-  - 実際のコードレビューでも、不合理に見えるコードが実は理由があってそのようになっていることがよくある
-  - 相手が間違うように、自分も間違う
-    - 自分を信頼し相手を疑う
-    - 相手を信頼し自分を疑う
+<ul class="content-list">
+  <li>専門性を認め合う
+    <ul>
+      <li>チームメンバーの得意分野を活かす</li>
+      <li>LLMの持つ知識を活用する</li>
+    </ul>
+  </li>
+  <li>建設的な対話を心がける
+    <ul>
+      <li>明確な意図を伝える</li>
+      <li>反論や提案を歓迎する姿勢</li>
+    </ul>
+  </li>
+  <li>謙虚な姿勢を保つ
+    <ul>
+      <li>自分も間違える可能性を認識</li>
+      <li>相手の意見に耳を傾ける</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="highlight-box">
+  相互リスペクトは、より良いアイデアを生み出す土壌となる
+</div>
 
 ---
 
