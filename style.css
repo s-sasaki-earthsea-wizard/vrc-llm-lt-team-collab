@@ -71,6 +71,7 @@
     margin: 20px auto;
     max-width: 1200px;
     width: 100%;
+    gap: 20px
   }
   
   .left {
@@ -170,7 +171,7 @@
   object-fit: cover;  /* 画像のアスペクト比を保持 */
   border: 4px solid #fff;  /* 白い縁取り */
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);  /* 軽い影をつける */
-  margin-left: 60px;
+  margin-left: 150px;
 }
 
 /* オプション: ホバーエフェクト */
@@ -225,7 +226,7 @@
   padding: 15px;
   margin-top: 20px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
 }
 
 .section-subtitle {
@@ -233,7 +234,7 @@
   font-size: 3rem;
   font-weight: bold;
   color: #333;
-  margin: 20px 0;
+  margin: 10px 0;
   padding-bottom: 10px;
   border-bottom: 2px solid #0084ff;  /* アクセントカラー */
 }
@@ -288,4 +289,119 @@
   background-color: #ffebee;  /* 薄い赤色の背景 */
   color: #333;  /* 黒っぽい文字色 */
   border-left: 4px solid #ff1744;  /* 左端の赤いライン */
+}
+
+.document-share {
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px 0;
+  max-width: 300px;
+}
+
+.pdf-preview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.file-icon {
+  font-size: 1.2em;
+}
+
+.file-size {
+  color: #888;
+  margin-left: auto;
+}
+
+.role-tag {
+  background-color: #f0f0f0;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  margin-right: 8px;
+  color: #666;
+}
+
+.bot-message .role-tag {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.team-profile h4 {
+  margin: 20px 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.team-profile ul {
+  margin-bottom: 25px;
+}
+
+.default-style {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+
+.custom-style {
+  background-color: #f0f7ff;
+  border: 1px solid #cce5ff;
+}
+
+.comparison-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bot-message.default-bot {
+  background-color: #cbcdcf;
+  color: #1c1e21;
+  font-family: 'Consolas', monospace;  /* より機械的なフォント */
+  line-height: 1.6;
+  padding: 15px;
+  font-size: 1.7rem;
+}
+
+.bot-message.custom-bot {
+  background-color: #fad8e3;  /* 優しいピンク系 */
+  color: #333;
+  font-family: 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif;
+  line-height: 1.6;
+  padding: 15px;
+  font-size: 2.0rem;  /* フォントサイズも少し小さく */
+}
+
+.custom-bot ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.default-bot ul {
+  padding-left: 15px;
+  margin: 5px 0;
+}
+
+.comparison-container {
+  padding: 20px;
+  background: #fff;
+}
+
+.question-box {
+  background: #f0f7ff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #cce5ff;
+}
+
+.user-query {
+  font-size: 1.1em;
+  color: #0066cc;
 }

@@ -272,64 +272,249 @@
 
 ## ドキュメンテーションの活用
 
-### エンジニアのお仕事はたくさんのドキュメントを書く
-
----
-
-## ドキュメントのない開発現場の悲劇
+<div class="split">
+  <div class="left">
+    <p class="section-subtitle">ドキュメントの重要性</p>
+    <ul class="content-list">
+      <li>チーム開発の基盤
+        <ul>
+          <li>前提条件の共有</li>
+          <li>認識の統一</li>
+          <li>新メンバーの参加支援</li>
+        </ul>
+      </li>
+      <li>日常的なドキュメント
+        <ul>
+          <li>プロジェクト (README/仕様書)</li>
+          <li>コード (docstring/コメント)</li>
+          <li>変更管理 (commit/PR/Issue)</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="right">
+    <div class="chat-container">
+      <div class="user-message">
+        プロジェクトにアサインされたばかりなので、開発環境構築の手順書がどこにあるか教えてください
+      </div>
+      <div class="bot-message negative-example">
+        環境構築の手順書？そんなものウチにはないよ...
+      </div>
+      <div class="user-message">
+        🤮 (オエーッ！)
+      </div>
+    </div>
+    <div class="highlight-box">
+      <ul>
+      <li>適切なドキュメンテーションのないチームは生産性が最悪！</li>
+      <li>コードを書く時間よりドキュメントを書く時間の方が長いかも...？</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 ---
 
 ## LLMと一緒にドキュメントを読む
+<div class="chat-container">
+  <div class="user-message">
+    UbuntuでPoetryをインストールする手順をまとめてください。最新の公式ドキュメントを共有します
+  </div>
+  <div class="document-share">
+    <div class="pdf-preview">
+      <span class="file-icon">📄</span>
+      poetry-docs.pdf
+      <span class="file-size">1.1MB</span>
+    </div>
+  </div>
+  <div class="bot-message">
+    もちろんです。Ubuntu で Poetry をインストールする手順を以下にまとめます。<br />
+    <br />
+    1. Poetry インストーラースクリプトをダウンロード:
+   <pre class="code-block">
+   curl -sSL https://install.python-poetry.org | python3 -
+    </pre>
+    ...
+  </div>
+</div>
+<div class="highlight-box">
+  信頼性の高いドキュメントの共有はLLMの回答の質を高める！
+</div>
 
 ---
 
 ## ドキュメンテーションの効率化
-- Gensparkを使う (要約AIサービス)
-	- Gensparkは、質問に対する検索結果をまとめた記事を生成する最新のサービス
-	- https://www.genspark.ai/ 
-- **LLM自身にドキュメンテーションを依頼する**
 
----
-
-## LLMへのドキュメント作成依頼 例1
-
-<div class="chat-container">
-  <div class="user-message">
-        今回のディスカッションのミニッツを書いてください
+<div class="split">
+  <div class="left">
+    <p class="section-subtitle">ドキュメント作成の新しい形</p>
+    <ul class="content-list">
+      <li>AI要約サービス: <a href="https://www.genspark.ai/"> Genspark</a>
+        <ul>
+          <li>質問に基づく情報収集</li>
+          <li>検索結果の自動要約</li>
+          <li>構造化された文書生成</li>
+        </ul>
+      </li>
+      <li>LLMの活用
+        <ul>
+          <li>議事録の作成補助</li>
+          <li>現状認識、課題の整理</li>
+          <li>READMEなどの技術文書作成支援</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="right">
+    <div class="chat-container">
+      <div class="user-message">
+        今日のディスカッションの議事録を書いてください。主な話題は開発環境のクラウド構築に関する戦略検討です。
       </div>
       <div class="bot-message">
-        1. NoSQLの導入検討と利点
-        - さめさんはRDBしか経験がないが、会話ログ保存の用途にNoSQLが適しているかを検討
-        - ChatGPTは、NoSQL（特にドキュメント型DB）の柔軟性、リアルタイムクエリ、スケーラビリティが、会話データ管理に有効であると説明
-       ...
+        <h5>1. 検討の背景</h5>
+        <ul>
+          <li>高負荷な画像処理/点群処理の開発環境整備が必要</li>
+          <li>将来的なオンプレミス移行の可能性も考慮</li>
+        </ul>
+        ...
       </div>
+    </div>
+    <div class="highlight-box">
+      AIを活用することで、ドキュメント作成の
+      <span class="highlight">品質</span>と<span class="highlight">効率</span>が向上！
+    </div>
+  </div>
 </div>
-
----
-
-## LLMへのドキュメント作成依頼 例2
-
-<div class="chat-container">
-  <div class="user-message">
-        考えを整理したいので、ここまでの議論のサマリーを書いて欲しいです
-      </div>
-      <div class="bot-message">
-        1. 課題の背景
-        - AWSで*****の開発環境を構築するため、複数のAWSのサービスの連携や技術スタックを候補に挙げている。
-        - さらに、*****という制約があり、費用対効果や技術的な実現可能性の観点から合理的な選択を検討中。
-       ...
-      </div>
-</div>
-
-- 自分の考えを記録、整理するのに役に立つ
-- 議事録をLLMに渡すことで次回以降のディスカッションがスムーズになる
 
 ---
 
 ## チームコラボレーションの実現
-- 複数のLLMの活用例
-- キャラクター設定の効果
+
+<p class="section-subtitle">LLMチーム作りのポイント</p>
+<ul class="content-list">
+  <li>チームビルディング
+    <ul>
+      <li>明確な役割分担</li>
+      <li>個性を活かした対話</li>
+      <li>建設的な意見交換</li>
+    </ul>
+  </li>
+  <li>期待される効果
+    <ul>
+      <li>多様な視点の獲得</li>
+      <li>より良い成果物</li>
+    </ul>
+  </li>
+</ul>
+<div class="highlight-box">
+  このあと、実際のチーム内での役割分担、チームディスカッションを紹介します！
+</div>
+
+---
+
+## 筆者のチームメイトの紹介
+
+- 🫛 **カラスノエンドウ (ChatGPT)**
+  - **由来**: 「ゲド戦記」の主人公の相棒から
+  - キャラクター: カジュアルなフレンドリー系男子
+  - 役割: プロジェクトの「原点」を担当
+- 🍡 **華扇 (Claude)**
+  - **由来**: 「東方茨歌仙」の主人公から
+  - キャラクター: のんびり系の女性エンジニア
+  - 役割: 理想論から現実解を導く
+- 🇬🇪 **ルスダン (Gemini)**
+  - **由来**: 乙女王と称されたジョージアの女王から
+  - **キャラクター**: クールな新人エンジニア
+  - **役割**: 建設的な批判による議論促進
+
+---
+
+## LLMのキャラクター設定がもたらす変化
+
+<div class="split">
+  <div class="left">
+  <ul>
+    <li>同じ質問でも、キャラクターが違うと回答が変わる</li>
+    <li>ユーザーのバックグラウンドに応じた回答</li>
+    <li>人間味のある受け答えは私たちにチームコラボレーションを意識させる</li>
+    <li>単純に楽しい！君だけの理想のチームを作ろう！</li>
+  </ul>
+  </div>
+  <div class="right">
+    <div class="chat-container">
+      <div class="user-message">
+        PostgreSQLをGISのプロジェクトに使うメリットを教えて！
+      </div>
+      <div class="bot-message">
+        PostgreSQLをGISプロジェクトで使用する主なメリットについて説明させていただきます：<br />
+        <br />
+        1. PostGISの強力な拡張機能 <br />
+        <ul>
+          <li>空間データの保存、分析、操作が可能</li>
+          <li>地理座標系と投影座標系の両方をサポート</li>
+          ...
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+## LLMのキャラクター設定がもたらす変化
+
+<div class="question-box">
+    <div class="user-query">
+      🧑‍💻 PostgreSQLをGISのプロジェクトに使うメリットを教えて！
+    </div>
+</div>
+
+<div class="split">
+  <div class="left">
+    <p class="section-subtitle">デフォルトのLLM (Claude)</p>
+    <div class="chat-container default-style">
+      <div class="bot-message default-bot">
+        🤖<br />
+        PostgreSQLをGISプロジェクトで使用する主なメリットについて説明させていただきます：<br />
+        1. PostGISの強力な拡張機能 <br />
+        <ul>
+          <li>空間データの保存、分析、操作が可能</li>
+          <li>地理座標系と投影座標系の両方をサポート</li>
+        </ul>
+        ...
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <p class="section-subtitle">カスタマイズされたLLM (華扇)</p>
+    <div class="chat-container custom-style">
+      <div class="bot-message custom-bot">
+        🍡<br />
+        GISプロジェクトでPostgreSQLを使うことはさめさんのスキルセットに基づくと以下のようなメリットがあると思うわ。<br />
+        1. PostGISという強力な拡張機能<br />
+        <ul>
+          <li>空間データの保存と検索が得意</li>
+          <li>3次元データの取扱いができる</li>
+          <li>点群データの処理もサポート</li>
+        </ul>
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+## キャラクター設定の効果
+<div class="comparison-box">
+  <ul class="content-list">
+    <li>ユーザーの経験に基づいた具体的な説明</li>
+    <li>親しみやすい対話形式</li>
+    <li>継続的な対話を促す雰囲気作り</li>
+  </ul>
+  <div class="highlight-box">
+    どちらが「もっと詳しく聞いてみたい」と思える対話でしょう？
+  </div>
+</div>
 
 ---
 
