@@ -405,3 +405,95 @@
   font-size: 1.1em;
   color: #0066cc;
 }
+
+.explanation-box {
+  background-color: #fff3e0;  /* 温かみのある背景色 */
+  border-left: 4px solid #ff9800;  /* オレンジ系のアクセントライン */
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+  font-size: 2.18rem;
+}
+
+.explanation-box ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+.explanation-box li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.explanation-box li:before {
+  content: "💡";  /* 電球の絵文字 */
+  position: absolute;
+  left: 0;
+  color: #ff9800;
+}
+
+.explanation-box .conclusion {
+  margin-top: 15px;
+  font-style: italic;
+  color: #666;
+}
+
+.pillar-card {
+  background-color: #f8f9fa;
+  border-left: 4px solid #0084ff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pillar-list {
+  list-style: none;  /* デフォルトのリストスタイルを消す */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.pillar-card h3 {
+  color: #0084ff;
+  font-size: 2.7rem;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.pillar-card ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.pillar-card li {
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.pillar-card li:before {
+  content: "▶";  /* 小さな三角形 */
+  position: absolute;
+  left: 0;
+  color: #0084ff;
+  font-size: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ホバー効果 */
+.pillar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}

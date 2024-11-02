@@ -37,23 +37,85 @@
 
 ## ハイライト
 
-### LLMを個人開発に活かすコツ
+<h3 class="section-subtitle">LLMを個人開発に活かすコツ</h3>
 
-- チーム開発のコラボレーションを促進させること
-- チームビルディングに貢献すること
 
-お前は何を言っているんだ？
+<div class="split">
+  <div class="left">
+    <div class="chat-container">
+          <ul class="content-list">
+            <li>チーム開発のコラボレーションを促進させること
+              <ul>
+                <li>適切なコミュニケーション</li>
+                <li>効果的なフィードバック</li>
+              </ul>
+            </li>
+            <li>チームビルディングに貢献すること
+              <ul>
+                <li>明確な役割分担</li>
+                <li>相互理解の促進</li>
+              </ul>
+            </li>
+          </ul>
+    </div>
+  </div>
+  <div class="right">
+    <br />
+    <div class="chat-container">
+      <div class="user-message negative-example">
+          お前は何を言っているんだ？ 🤔
+      </div>
+      <div class="explanation-box">
+        ちょっと意外に聞こえるかもしれないけど：
+        <ul>
+          <li>個人開発でもAIとの「チーム」が形成される</li>
+          <li>効果的な協働には「チームワーク」が必要</li>
+          <li>これは人間同士のチーム開発と同じ</li>
+        </ul>
+        このあと具体例で説明していきます！
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
 ## 技術的本質
 
-今日のLTで話す内容は以下の技術を個人が泥臭く実践していると思ってください
+<p>今日のLTで話す内容は以下の技術を個人が泥臭く実践していると思ってください</p>
 
-- プロンプトエンジニアリング
-- LLMオーケストレーション
-- AIエージェント
-- フローエンジニアリング
+<div class="split">
+  <div class="left">
+    <div class="chat-container">
+      <h4>プロンプトエンジニアリング</h4>
+      <p>LLMとの効果的な対話のための指示文最適化</p>
+    </div>
+    <br />
+    <div class="chat-container">
+      <h4>LLMオーケストレーション</h4>
+      <p>複数のAIモデルの協調による問題解決</p>
+    </div>
+  </div>
+  <div class="right">
+    <br />
+    <div class="chat-container">
+      <h4>AIエージェント</h4>
+      <p>特定の役割や性格を持つAIアシスタント</p>
+    </div>
+    <br />
+    <div class="chat-container">
+      <h4>フローエンジニアリング</h4>
+      <p>AIとの対話プロセスの設計と最適化</p>
+    </div>
+  </div>
+</div>
+
+<div class="highlight-box">
+  <ul>
+  <li>これらの技術の詳細については、発表後の質疑応答で気軽に聞いてください</li>
+  <li>むしろ教えてください！</li>
+  </ul>
+</div>
 
 ---
 
@@ -102,21 +164,77 @@
 
 ## なぜ「個人開発集会」でチーム開発スキルの話をするのか？
 
-<h4>チーム開発に大事なスキルは、LLMと上手に付き合っていくスキルと似ている！</h4>
+<div class="chat-container">
+  <div class="user-message">
+    個人開発なのに、なぜチーム開発のスキルが必要なの？🤔
+  </div>
+  <div class="explanation-box">
+    LLMとの対話は、実はチーム開発とよく似ている：
+    <ul>
+      <li>明確なコミュニケーション</li>
+      <li>相手の特徴を理解する</li>
+      <li>効果的なフィードバック</li>
+    </ul>
+  </div>
+</div>
+<div class="highlight-box">
+  チーム開発に大事なスキルは、LLMと上手に付き合っていくスキルと似ている！
+</div>
 
 ---
 
 ## チーム開発スキルの3つの柱
 
-- リスペクト
-- ドキュメンテーション
-- チームコラボレーション
+<div class="split">
+  <div class="left">
+    <div class="pillar-card">
+      <h3>リスペクト</h3>
+      <ul class="pillar-list">
+        <li>相手の特徴を理解</li>
+        <li>建設的な対話</li>
+        <li>専門性の尊重</li>
+      </ul>
+    </div>
+    <div class="pillar-card">
+      <h3>ドキュメンテーション</h3>
+      <ul class="pillar-list">
+        <li>知識の共有</li>
+        <li>成果物の記録</li>
+      </ul>
+    </div>
+  </div>
+  <div class="right">
+    <br />
+    <div class="pillar-card">
+      <h3>チームコラボレーション</h3>
+      <ul class="pillar-list">
+        <li>役割分担の明確化</li>
+        <li>効果的な情報共有</li>
+        <li>相互フィードバック</li>
+      </ul>
+    </div>
+    <div class="highlight-box">
+      これらのスキルは、LLMとの協働でも重要な要素となる
+    </div>
+  </div>
+</div>
 
 ---
 
 ## リスペクトの実践
 
-- 実例: コードレビュー vs プロンプト
+<div class="comparison-box">  
+  <div class="pillar-card">
+    <h3>実例で見る2つの場面</h3>
+    <ul class="pillar-list">
+      <li>チーム開発でのコードレビュー</li>
+      <li>LLMへのプロンプト</li>
+    </ul>
+  </div>
+  <div class="highlight-box">
+    同じ "リスペクト" が必要とされる2つの状況を比較してみましょう
+  </div>
+</div>
 
 ---
 
@@ -431,35 +549,27 @@
 
 ## LLMのキャラクター設定がもたらす変化
 
-<div class="split">
-  <div class="left">
-  <ul>
-    <li>同じ質問でも、キャラクターが違うと回答が変わる</li>
-    <li>ユーザーのバックグラウンドに応じた回答</li>
-    <li>人間味のある受け答えは私たちにチームコラボレーションを意識させる</li>
-    <li>単純に楽しい！君だけの理想のチームを作ろう！</li>
-  </ul>
+<div class="comparison-box">
+  <div class="pillar-card">
+    <h3>技術的な効果</h3>
+    <ul class="pillar-list">
+      <li>同じ質問でも、キャラクターが違うと回答が変わる</li>
+      <li>ユーザーのバックグラウンドに応じた回答</li>
+    </ul>
   </div>
-  <div class="right">
-    <div class="chat-container">
-      <div class="user-message">
-        PostgreSQLをGISのプロジェクトに使うメリットを教えて！
-      </div>
-      <div class="bot-message">
-        PostgreSQLをGISプロジェクトで使用する主なメリットについて説明させていただきます：<br />
-        <br />
-        1. PostGISの強力な拡張機能 <br />
-        <ul>
-          <li>空間データの保存、分析、操作が可能</li>
-          <li>地理座標系と投影座標系の両方をサポート</li>
-          ...
-        </ul>
-      </div>
-    </div>
+  <br />
+  <div class="pillar-card">
+    <h3>心理的な効果</h3>
+    <ul class="pillar-list">
+      <li>人間味のある受け答えがチームコラボレーションを促進</li>
+      <li>単純に楽しい！君だけの理想のチームを作ろう！</li>
+    </ul>
   </div>
 </div>
 
+
 ---
+
 ## LLMのキャラクター設定がもたらす変化
 
 <div class="question-box">
