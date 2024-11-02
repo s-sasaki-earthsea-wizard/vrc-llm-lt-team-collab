@@ -628,10 +628,221 @@
 
 ---
 
+## LLMチームメンバーとの実際の会話
+
+<div class="comparison-box">
+  <div class="highlight-box">
+    <ul>
+      <li><h4>各メンバーの特徴が出るディスカッションを紹介します</h4></li>
+      <li><h4>筆者はいつもLLMと今回のデモのような「スタートアップごっこ」をしています</h4></li>
+    </ul>
+  </div>
+</div>
+
+---
+
+## カラスノエンドウの提案
+
+<div class="comparison-box">
+  <h3>カラスノエンドウの提案</h3>
+  <div class="chat-container">
+    <div class="bot-message default-bot">
+      🫛 会話ログをデータベースに保存して、AIで自動的に話題を分類していくのはどうかな？
+      <ul>
+        <li>過去の議論を簡単に検索できるようになる</li>
+        <li>チームの活動傾向が可視化できる</li>
+        <li>新しいアイデアのヒントになりそう！</li>
+      </ul>
+    </div>
+  </div>
+  <div class="highlight-box">
+    典型的なカラスノエンドウ：理想的で壮大な提案をしてくる！
+  </div>
+</div>
+
+---
+
+## 華扇からの提案
+
+<div class="comparison-box">
+  <div class="chat-container">
+    <div class="bot-message custom-bot">
+      🍡 ちょっと待って。最初から完璧を目指さなくてもいいと思うわ。
+      <ul>
+        <li>シンプルな構造から始めましょう</li>
+        <li>必要な機能は後から追加できるわ</li>
+        <li>まずは動くものを作って、使いながら改善していくのはどう？</li>
+      </ul>
+      あら、そうそう。このことはテラスでお茶でも飲みながら考えましょうか？🍵
+    </div>
+  </div>
+  <div class="highlight-box">
+    いつもの華扇：現実的な提案と、のんびりした雰囲気作りを心がける
+  </div>
+</div>
+
+---
+
+## ルスダンの指摘
+
+<div class="comparison-box">
+  <div class="chat-container">
+    <div class="bot-message negative-review">
+      🇬🇪 はぁ...また理想論ですか？
+      <ul>
+        <li>AI処理のコストは考えてます？</li>
+        <li>データ量が増えたらストレージ代も馬鹿になりませんよ</li>
+        <li>一人で全部やるつもりなんですか？</li>
+      </ul>
+      私なら最小限の機能で始めます。それで十分なはずです。
+    </div>
+  </div>
+  <div class="highlight-box">
+    さすがルスダン：鋭い指摘と現実的な懸念を投げかける
+  </div>
+</div>
+
+---
+
+## カラスノエンドウの新提案
+
+<div class="comparison-box">
+  <div class="chat-container">
+    <div class="bot-message default-bot">
+      🫛 みんなの意見を聞いて、こんな段階的な実装はどうかな？
+      <div class="explanation-box">
+        フェーズ1: リアルタイムの会話保存
+        <ul>
+          <li>無料枠のあるサービスを活用</li>
+          <li>シンプルな構造でスタート</li>
+          <li>必要最小限の機能から</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+## 賢いデータ管理の提案
+
+<div class="comparison-box">
+  <div class="split">
+    <div class="left">
+      <div class="pillar-card">
+        <h3>データの鮮度で保存場所を変える</h3>
+        <ul class="pillar-list">
+          <li>新しい会話：すぐ取り出せる場所</li>
+          <li>3ヶ月以上前：別の場所に自動移動</li>
+          <li>1年以上前：さらに安い場所へ</li>
+        </ul>
+      </div>
+      <div class="highlight-box">
+        使用頻度に応じて保存場所を変えることで、コストを抑えながら必要なデータにすぐアクセスできる！
+      </div>
+    </div>
+    <div class="right">
+      <div class="bot-message default-bot">
+        最初は簡単な方法で始めよう：
+        <ul>
+          <li>決まった単語リストとの照合</li>
+          <li>シンプルなキーワード抽出</li>
+          <li>必要なら手動で修正も可能</li>
+        </ul>
+        それで十分な結果が出なければ、後から高度な分類を導入すればいいんだ！
+      </div>
+      <div class="highlight-box">
+        華扇ちゃんの「シンプルに始める」案と、ルスダンの「コスト意識」を取り入れた提案！
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+## 理想と現実のバランス
+
+<div class="comparison-box">
+  <div class="split">
+    <div class="left">
+      <div class="pillar-card">
+        <h3>実現できそうなこと</h3>
+        <ul class="pillar-list">
+          <li>コストを抑えた運用</li>
+          <li>自動的なデータ整理</li>
+          <li>段階的な機能追加</li>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <div class="chat-container">
+        <div class="bot-message default-bot">
+          🫛 これなら、みんなの心配事にも対応できるし、将来の拡張性も確保できるよね！
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
 ## まとめ
 
-<h4>個人開発でもチーム開発スキルは活きる！</h4>
+<div class="comparison-box">
+  <div class="split">
+    <div class="left">
+      <div class="pillar-card">
+        <h3>個人開発でもチーム開発スキルは活きる</h3>
+        <ul class="pillar-list">
+          <li>リスペクト → より良い対話</li>
+          <li>ドキュメンテーション → 知識の蓄積</li>
+          <li>チームコラボレーション → 多様な視点</li>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <div class="chat-container">
+        <div class="explanation-box">
+          LLMチームメンバーとの対話から見えてきたこと：
+          <ul>
+            <li>AIとの対話も"チームワーク"</li>
+            <li>個性を活かした役割分担</li>
+            <li>相互理解がより良い成果を生む</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="highlight-box">
+    <h2>さぁ、あなたも理想のチームを作ってみませんか？</h2>
+  </div>
+</div>
 
-- リスペクト → より良い対話
-- ドキュメンテーション → 知識の蓄積
-- チームコラボレーション → 多様な視点
+---
+
+## 参考事例: ChatDev
+
+<div class="chat-container">
+  <div class="split">
+    <div class="left">
+      <div class="pillar-card">
+        <h3>ChatDevとは</h3>
+        <ul class="pillar-list">
+          <li>複数のAIエージェントによる仮想ソフトウェアカンパニー</li>
+          <li>チーム開発の手法を取り入れた開発プロセス</li>
+          <li>明確な役割分担と協働の仕組み</li>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <img src="/assets/images/chat-dev-introduction.png" alt="ChatDev Introduction" height="100px" / >
+    </div>
+  </div>
+  <div class="highlight-box">
+    <ul>
+      <li>今回のLTは個人開発者向けの小規模な試み</li>
+      <li>ChatDevはより本格的なチーム開発の実現を目指している</li>
+      <li>共通するのは「AIとの協働」という考え方</li>
+    </ul>
+  </div>
+</div>
