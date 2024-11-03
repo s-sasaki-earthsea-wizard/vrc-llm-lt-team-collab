@@ -554,6 +554,7 @@
     <h3>技術的な効果</h3>
     <ul class="pillar-list">
       <li>同じ質問でも、キャラクターが違うと回答が変わる</li>
+      <li>LLM自身の役割に応じてカスタマイズされた回答</li>
       <li>ユーザーのバックグラウンドに応じた回答</li>
     </ul>
   </div>
@@ -782,6 +783,62 @@
       </div>
     </div>
   </div>
+</div>
+
+---
+
+## 思わぬ展開：メンバーからの気づき
+ 
+<div class="user-message">
+  ところで、そもそも... 🤔
+  みんながで話した内容は、他のコードを書かないでも、君たち自身が整理できるんじゃない？
+  もっと簡単な方法があると思う！
+</div>
+
+<div class="triple-split">
+  <div class="column column-left">
+    <div class="pillar-card">
+      <h4>🫛カラスノエンドウ</h4>
+      <div class="bot-message default-bot">
+        その通り！
+        <ul class="pillar-list">
+          <li>自動で整理できるよ</li>
+          <li>必要な情報も全部入れられる</li>
+          <li>後から探すのも簡単！</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column column-center">
+    <div class="pillar-card">
+      <h4>🍡 華扇</h4>
+      <div class="bot-message custom-bot">
+        素敵なアイデアね！
+        <ul class="pillar-list">
+          <li>自動化で手間削減</li>
+          <li>みんなの知恵を共有</li>
+          <li>どんどん知見が貯まるわ！</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column column-right">
+    <div class="pillar-card">
+      <h4>🇬🇪 ルスダン</h4>
+      <div class="bot-message negative-review">
+        でも、ちょっと待って...
+        <ul class="pillar-list">
+          <li>準備が大変かも</li>
+          <li>完璧は期待できない</li>
+          <li>もっと簡単な方法は？</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="highlight-box">
+  チームメンバーとの対話から生まれた "そもそも論" が、
+  思いがけないブレイクスルーを導くことも！
 </div>
 
 ---

@@ -497,3 +497,43 @@
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
 }
+
+.triple-split {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 1200px;
+  width: 100%;
+  gap: 15px;
+}
+
+.column {
+  width: 32%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .triple-split {
+    flex-direction: column;
+  }
+  
+  .column {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* カラムごとの微調整用 */
+.column-left {
+  margin-right: auto;
+}
+
+.column-center {
+  margin: 0 auto;
+}
+
+.column-right {
+  margin-left: auto;
+}
