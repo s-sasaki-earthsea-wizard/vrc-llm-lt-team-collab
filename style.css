@@ -460,7 +460,7 @@
 
 .pillar-card h3 {
   color: #0084ff;
-  font-size: 2.7rem;
+  font-size: 2.4rem;
   margin-bottom: 15px;
   padding-bottom: 8px;
   border-bottom: 2px solid #e9ecef;
@@ -477,7 +477,7 @@
   padding: 6px 0;
   padding-left: 20px;
   position: relative;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   line-height: 1;
 }
 
@@ -615,7 +615,7 @@
 .bot-message.constructive-critic li {
   position: relative;
   padding: 8px 0 8px 25px;
-  margin: -10px 0;
+  margin: 0px 0;
 }
 
 .bot-message.constructive-critic li:before {
@@ -668,8 +668,134 @@
 }
 
 .highlight-box.overlap-top {
-  margin-top: -20px;  /* 上に重なるように負のマージン */
+  margin-top: -10px;  /* 上に重なるように負のマージン */
   position: relative; /* 重なり順を制御するため */
   z-index: 1;        /* 他の要素より前面に */
   background-color: rgba(248, 249, 250, 0.9);  /* 少し透明度を持たせて重なりを自然に */
+}
+
+/* よりコンパクトなtriple-split用のスタイル */
+.triple-split.compact {
+  margin: 10px auto;  /* マージンを縮小 */
+  gap: 10px;         /* 列間のギャップを縮小 */
+}
+
+.triple-split.compact .pillar-card {
+  padding: 10px;    /* パディングを縮小 */
+  margin: 5px 0;    /* マージンを縮小 */
+}
+
+.triple-split.compact .pillar-card h4 {
+  margin: 5px 0;    /* 見出しのマージンを縮小 */
+  font-size: 2.2rem; /* フォントサイズを少し小さく */
+}
+
+.triple-split.compact .bot-message {
+  padding: 10px;    /* メッセージのパディングを縮小 */
+}
+
+.triple-split.compact .pillar-list {
+  margin: 5px 0;    /* リストのマージンを縮小 */
+}
+
+.triple-split.compact .pillar-list li {
+  padding: 3px 0;   /* リストアイテムのパディングを縮小 */
+  font-size: 2.2rem; /* フォントサイズを少し小さく */
+}
+
+/* ユーザーメッセージもコンパクトに */
+.user-message.compact {
+  margin-bottom: 10px;
+  padding: 10px 16px;
+}
+
+/* カラスノエンドウのメッセージ内のリストスタイル調整 */
+.bot-message.casual-friendly ul {
+  list-style: none;
+  padding-left: 1em;
+  margin: 8px 0;
+}
+
+.bot-message.casual-friendly li {
+  position: relative;
+  padding: 3px 0;
+  line-height: 1.4;
+}
+
+.bot-message.casual-friendly li:before {
+  content: "✨";  /* キラキラ */
+  position: relative;
+  left: -0.4em;
+  top: 50%;
+  transform: translateX(-50%);
+  color: #fff;  /* 白色で視認性を確保 */
+  font-size: 0.8em;  /* 記号を少し小さく */
+}
+
+/* 華扇のメッセージ内のリストスタイル調整 */
+.bot-message.custom-bot ul {
+  list-style: none;
+  padding-left: 1.5em;
+  margin: 0px 0;
+}
+
+.bot-message.custom-bot li {
+  position: relative;
+  padding: 3px 0;
+  line-height: 1.;
+}
+
+.bot-message.custom-bot li:before {
+  content: "🌸";  /* 花の記号 */
+  position: relative;
+  left: -0.4em;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+/* ルスダンのメッセージ内のリストスタイル調整 */
+.bot-message.constructive-critic ul {
+  list-style: none;
+  padding-left: 1.5em;
+  margin: 8px 0;
+}
+
+.bot-message.constructive-critic li {
+  position: relative;
+  padding: 3px 0;
+  line-height: 1.4;
+}
+
+.bot-message.constructive-critic li:before {
+  content: "→";  /* シンプルな矢印 */
+  position: relative;
+  left: -0.4em;
+  color: #3498db;  /* アクセントカラーの青 */
+  font-size: 0.9em;
+}
+
+/* メッセージ内の配置調整用の共通スタイル */
+.message-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.message-intro {
+  margin-bottom: 8px;
+}
+
+/* カラスノエンドウのメッセージレイアウト */
+.bot-message.casual-friendly .message-content {
+  color: #fff;
+}
+
+/* 華扇のメッセージレイアウト */
+.bot-message.custom-bot .message-content {
+  color: #333;
+}
+
+/* ルスダンのメッセージレイアウト */
+.bot-message.constructive-critic .message-content {
+  color: #ecf0f1;
 }
