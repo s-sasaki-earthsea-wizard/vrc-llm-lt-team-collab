@@ -160,6 +160,8 @@ psd
 thumb
 sketch
 
+# Fusuma
 dist
+slide_files
 
 # End of https://www.toptal.com/developers/gitignore/api/node,react
