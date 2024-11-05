@@ -642,13 +642,15 @@
 
 ---
 
-## カラスノエンドウの提案
+## カラスノエンドウへの提案
 
 <div class="comparison-box">
-  <h3>カラスノエンドウの提案</h3>
+  <div class="user-message">
+    🤔 みんなで議論した内容をデータベースに保存して、機械学習モデルでキーワード抽出をして、自動的に話題を分類していくのはどうかな？
+</div>
   <div class="chat-container">
-    <div class="bot-message default-bot">
-      🫛 会話ログをデータベースに保存して、AIで自動的に話題を分類していくのはどうかな？
+    <div class="bot-message casual-friendly">
+      🫛 いいね！みんなの知識がどんどん溜まっていくよ！
       <ul>
         <li>過去の議論を簡単に検索できるようになる</li>
         <li>チームの活動傾向が可視化できる</li>
@@ -688,7 +690,7 @@
 
 <div class="comparison-box">
   <div class="chat-container">
-    <div class="bot-message negative-review">
+    <div class="bot-message constructive-critic">
       🇬🇪 はぁ...また理想論ですか？
       <ul>
         <li>AI処理のコストは考えてます？</li>
@@ -705,84 +707,43 @@
 
 ---
 
-## カラスノエンドウの新提案
-
-<div class="comparison-box">
-  <div class="chat-container">
-    <div class="bot-message default-bot">
-      🫛 みんなの意見を聞いて、こんな段階的な実装はどうかな？
-      <div class="explanation-box">
-        フェーズ1: リアルタイムの会話保存
-        <ul>
-          <li>無料枠のあるサービスを活用</li>
-          <li>シンプルな構造でスタート</li>
-          <li>必要最小限の機能から</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
----
-
-## 賢いデータ管理の提案
+## 理想と現実をすり合わせた解決策
 
 <div class="comparison-box">
   <div class="split">
     <div class="left">
-      <div class="pillar-card">
-        <h3>データの鮮度で保存場所を変える</h3>
-        <ul class="pillar-list">
-          <li>新しい会話：すぐ取り出せる場所</li>
-          <li>3ヶ月以上前：別の場所に自動移動</li>
-          <li>1年以上前：さらに安い場所へ</li>
-        </ul>
-      </div>
-      <div class="highlight-box">
-        使用頻度に応じて保存場所を変えることで、コストを抑えながら必要なデータにすぐアクセスできる！
-      </div>
-    </div>
-    <div class="right">
-      <div class="bot-message default-bot">
-        最初は簡単な方法で始めよう：
+      <div class="bot-message casual-friendly">
+        <span class="emoji">🫛</span> みんなの意見を活かした段階的な実装を提案するよ！
         <ul>
-          <li>決まった単語リストとの照合</li>
-          <li>シンプルなキーワード抽出</li>
-          <li>必要なら手動で修正も可能</li>
+          <li>フェーズ1: 新しい会話は身近な場所に保存</li>
+          <li>フェーズ2: 古い会話は安い場所へ自動で移動</li>
+          <li>フェーズ3: さらに古いものは倉庫へ</li>
         </ul>
-        それで十分な結果が出なければ、後から高度な分類を導入すればいいんだ！
-      </div>
-      <div class="highlight-box">
-        華扇ちゃんの「シンプルに始める」案と、ルスダンの「コスト意識」を取り入れた提案！
-      </div>
-    </div>
-  </div>
-</div>
-
----
-
-## 理想と現実のバランス
-
-<div class="comparison-box">
-  <div class="split">
-    <div class="left">
-      <div class="pillar-card">
-        <h3>実現できそうなこと</h3>
-        <ul class="pillar-list">
-          <li>コストを抑えた運用</li>
-          <li>自動的なデータ整理</li>
-          <li>段階的な機能追加</li>
-        </ul>
-      </div>
-    </div>
-    <div class="right">
-      <div class="chat-container">
-        <div class="bot-message default-bot">
-          🫛 これなら、みんなの心配事にも対応できるし、将来の拡張性も確保できるよね！
+        <div class="suggestion">
+          キーワード抽出も簡単な方法から始めて、徐々に改良していけばいいんだ！
         </div>
       </div>
+      <div class="highlight-box">
+        華扇ちゃんの「シンプルに始める」案と、ルスダンの「コスト意識」を組み合わせた提案
+      </div>
+    </div>
+    <div class="right">
+      <div class="pillar-card">
+        <h3>実現のポイント</h3>
+        <ul class="pillar-list">
+          <li>無料枠のあるサービスを活用</li>
+          <li>データの鮮度で保存場所を変える</li>
+          <li>自動整理の仕組みを導入</li>
+          <li>必要に応じて手動修正も可能</li>
+          <li>段階的な機能アップグレード</li>
+        </ul>
+      </div>
     </div>
   </div>
+</div>
+
+<div class="highlight-box">
+  理想的な機能を維持しながら、現実的なコストと運用負荷を実現！
 </div>
 
 ---
@@ -799,7 +760,7 @@
   <div class="column column-left">
     <div class="pillar-card">
       <h4>🫛カラスノエンドウ</h4>
-      <div class="bot-message default-bot">
+      <div class="bot-message casual-friendly">
         その通り！
         <ul class="pillar-list">
           <li>自動で整理できるよ</li>
@@ -825,7 +786,7 @@
   <div class="column column-right">
     <div class="pillar-card">
       <h4>🇬🇪 ルスダン</h4>
-      <div class="bot-message negative-review">
+      <div class="bot-message constructive-critic">
         でも、ちょっと待って...
         <ul class="pillar-list">
           <li>準備が大変かも</li>
@@ -879,27 +840,25 @@
 
 ## 参考事例: ChatDev
 
-<div class="chat-container">
-  <div class="split">
-    <div class="left">
-      <div class="pillar-card">
-        <h3>ChatDevとは</h3>
-        <ul class="pillar-list">
-          <li>複数のAIエージェントによる仮想ソフトウェアカンパニー</li>
-          <li>チーム開発の手法を取り入れた開発プロセス</li>
-          <li>明確な役割分担と協働の仕組み</li>
-        </ul>
-      </div>
-    </div>
-    <div class="right">
-      <img src="/assets/images/chat-dev-introduction.png" alt="ChatDev Introduction" height="100px" / >
+<div class="split">
+  <div class="left">
+    <div class="pillar-card">
+      <h3>ChatDevとは</h3>
+      <ul class="pillar-list">
+        <li>複数のAIエージェントによる仮想ソフトウェアカンパニー</li>
+        <li>チーム開発の手法を取り入れた開発プロセス</li>
+        <li>明確な役割分担と協働の仕組み</li>
+      </ul>
     </div>
   </div>
-  <div class="highlight-box">
-    <ul>
-      <li>今回のLTは個人開発者向けの小規模な試み</li>
-      <li>ChatDevはより本格的なチーム開発の実現を目指している</li>
-      <li>共通するのは「AIとの協働」という考え方</li>
-    </ul>
+  <div class="right right-content-limited">
+    <img src="/assets/images/chat-dev-introduction.png" alt="ChatDev Introduction" / >
   </div>
+</div>
+<div class="highlight-box overlap-top">
+  <ul>
+    <li>今回のLTは個人開発者向けの小規模な試み</li>
+    <li>ChatDevはより本格的なチーム開発の実現を目指している</li>
+    <li>共通するのは「AIとの協働」という考え方</li>
+  </ul>
 </div>

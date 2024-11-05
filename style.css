@@ -537,3 +537,139 @@
 .column-right {
   margin-left: auto;
 }
+
+/* カラスノエンドウ用のスタイル */
+.bot-message.casual-friendly {
+  background-color: #4CAF50;  /* 明るい緑系 - 元気な印象 */
+  color: white;
+  font-family: 'M PLUS Rounded 1c', 'Hiragino Kaku Gothic Pro', sans-serif;  /* 丸みのあるフォント */
+  line-height: 1.6;
+  padding: 15px;
+  font-size: 2.2rem;  /* デフォルトより少し大きく */
+  border-radius: 15px;  /* より丸みのある形状 */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  border: 2px solid #45a049;  /* わずかに濃い緑のボーダー */
+  transition: all 0.3s ease;
+}
+
+.bot-message.casual-friendly:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* カジュアルなリストスタイル */
+.bot-message.casual-friendly ul {
+  padding-left: 20px;
+  margin: 10px 0;
+  list-style-type: none;
+}
+
+.bot-message.casual-friendly li {
+  position: relative;
+  padding: 5px 0 5px 25px;
+  margin: 5px 0;
+}
+
+.bot-message.casual-friendly li:before {
+  content: "✨";  /* キラキラエモジ */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 強調表現用 */
+.bot-message.casual-friendly strong {
+  background: linear-gradient(transparent 60%, #45a049 60%);
+  font-weight: normal;
+}
+
+/* 絵文字のスタイル調整 */
+.bot-message.casual-friendly .emoji {
+  font-size: 1.2em;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* ルスダン用のスタイル */
+.bot-message.constructive-critic {
+  background-color: #2c3e50;  /* 深みのあるスレート色 - 知的な印象 */
+  color: #ecf0f1;  /* 明るめの文字色で読みやすさを確保 */
+  font-family: 'Inter', 'Roboto', sans-serif;  /* モダンでシャープなフォント */
+  line-height: 1.6;
+  padding: 20px;
+  font-size: 2.0rem;
+  border-radius: 8px;  /* シャープな印象のための控えめな角丸 */
+  border-left: 4px solid #3498db;  /* アクセントカラーとしての青 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 建設的な批判を表現するリストスタイル */
+.bot-message.constructive-critic ul {
+  padding-left: 15px;
+  margin: 15px 0;
+  list-style-type: none;
+  border-left: 2px solid #3498db;  /* 左側にアクセントライン */
+}
+
+.bot-message.constructive-critic li {
+  position: relative;
+  padding: 8px 0 8px 25px;
+  margin: -10px 0;
+}
+
+.bot-message.constructive-critic li:before {
+  content: "→";  /* シンプルな矢印マーカー */
+  position: absolute;
+  left: 0;
+  color: #3498db;  /* アクセントカラー */
+  font-weight: bold;
+}
+
+/* 強調表現用 */
+.bot-message.constructive-critic strong {
+  color: #3498db;
+  font-weight: 600;
+}
+
+/* メッセージ末尾の建設的な提案部分 */
+.bot-message.constructive-critic .suggestion {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #34495e;
+  color: #2ecc71;  /* 建設的な提案を緑色で表現 */
+  font-style: italic;
+}
+
+/* 絵文字のスタイル調整 */
+.bot-message.constructive-critic .emoji {
+  font-size: 1.1em;
+  vertical-align: middle;
+  margin-right: 8px;
+  opacity: 0.9;  /* やや控えめな表示 */
+}
+
+/* ホバーエフェクト */
+.bot-message.constructive-critic:hover {
+  border-left-color: #2ecc71;  /* ホバー時に建設的な印象の緑色に変化 */
+  transition: border-left-color 0.3s ease;
+}
+
+/* ChatDev画像用のスタイル */
+.right-content-limited {
+  max-width: 0px;
+  margin-left: -20px;
+}
+
+.chatdev-image {
+  width: 10%;
+  height: auto;
+  max-height: 10px;
+}
+
+.highlight-box.overlap-top {
+  margin-top: -20px;  /* 上に重なるように負のマージン */
+  position: relative; /* 重なり順を制御するため */
+  z-index: 1;        /* 他の要素より前面に */
+  background-color: rgba(248, 249, 250, 0.9);  /* 少し透明度を持たせて重なりを自然に */
+}
